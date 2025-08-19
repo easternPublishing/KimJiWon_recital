@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>김지원 클래식기타 리사이틀 · 羽化 — Eastern Publishing 초청연주회</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap&subset=latin-ext" rel="stylesheet">
+  <meta name="description"
+    content="Eastern Publishing 초청연주회 — 김지원 클래식기타 리사이틀 ‘羽化’. 2025.9.20 sat pm5:00, 예술공간 수애뇨. 전석 30,000원. Program: Dowland, Regondi, Diabelli, Barrios, Assad, Piazzolla." />
+
+  <!-- Open Graph (카카오/인스타/페북 공유) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="김지원 클래식기타 리사이틀 · 羽化" />
+  <meta property="og:description" content="2025.9.20 sat pm5:00 · 예술공간 수애뇨 · 전석 초대 />
+  <meta property=" og:image" content="butterfly_h.png" />
+  <meta property="og:site_name" content="Eastern Publishing 초청연주회" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root {
+      --bg: #f7f6f3;
+      --ink: #1f2937;
+      --sub: #6b7280;
+      --line: #e5e7eb;
+      --card: #ffffff;
+      --accent: #c79a3b;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: "Noto Serif", "Noto Serif KR", "Apple SD Gothic Neo", "Nanum Myeongjo", "Malgun Gothic", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px
+    }
+
+    /* ===== HERO (첫 화면) ===== */
+    header.hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      background: url('butterfly_v.jpg') center/cover no-repeat;
+    }
+
+    header.hero p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-inner {
+      padding: 50px 20px;
+      max-width: 900px;
+      width: 100%
+    }
+
+    .publisher {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #111;
+      border: 1px solid #111;
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 20px
+    }
+
+    .title {
+      font-size: clamp(18px, 3.5vw, 26px);
+      line-height: 1.25;
+      margin: 28px;
+    }
+
+    .subtitle {
+      font-size: clamp(34px, 6vw, 48px);
+      font-weight: 700;
+      margin: 6px 0 1px 0;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 12px 18px;
+      margin-top: 18px;
+      border-radius: 14px;
+      background: rgba(15, 45, 42, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(1px);
+      /* 살짝 유리 느낌(옵션) */
+    }
+
+    .datetime,
+    .venue {
+      font-size: 1rem;
+      margin: 4px 0;
+      opacity: .95
+    }
+
+    .ticket {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 6px 18px;
+      border-radius: 999px;
+      border: none;
+      background: rgba(168, 213, 177, 0.9);
+      color: #111;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    /* ===== 공통 섹션 ===== */
+    main section {
+      padding: 40px 0
+    }
+
+    .section-title {
+      font-size: 18px;
+      letter-spacing: .18em;
+      color: var(--sub);
+      text-transform: uppercase;
+      margin: 0 0 12px
+    }
+
+    #artists .card p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .04)
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px
+    }
+
+    @media(min-width:760px) {
+      .two {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    @media (max-width:600px) {
+
+      .program p strong,
+      .program p em {
+        font-size: clamp(1.15rem, 4.8vw, 1.35rem);
+      }
+    }
+
+    figure {
+      margin: 0
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      display: block
+    }
+
+    .byline {
+      font-size: 14px;
+      color: var(--sub);
+      margin-top: 8px
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--line);
+      margin: 22px auto;
+      max-width: 960px
+    }
+
+    ul.clean {
+      margin: 0;
+      padding-left: 18px
+    }
+
+    .program p {
+      margin: 0;
+    }
+
+    .program p+p {
+      margin-top: 28px;
+    }
+
+    .program strong,
+    .program em {
+      display: block;
+    }
+
+    .program strong+br,
+    .program em+br {
+      display: none;
+    }
+
+    .program p strong {
+      font-variant: small-caps;
+      letter-spacing: .04em;
+      color: var(--sub);
+      font-weight: 700;
+      font-size: clamp(1.05rem, 2.8vw, 1.25rem);
+      margin-bottom: 2px;
+    }
+
+    .program p em {
+      font-style: italic;
+      font-weight: 700;
+      line-height: 1.35;
+      font-size: clamp(1.05rem, 2.8vw, 1.25rem);
+      margin: 2px 0;
+    }
+
+    .program .mov {
+      display: block;
+      padding-left: 1.2em;
+      margin-top: 8px;
+      /* 곡명 아래 간격 */
+      line-height: 1.6;
+    }
+
+    blockquote {
+      margin: 0;
+      padding: 14px 18px;
+      background: #fff;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px
+    }
+
+    blockquote+blockquote {
+      margin-top: 12px
+    }
+
+    .btns {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap
+    }
+
+    .btn {
+      border: 1px solid var(--ink);
+      border-radius: 14px;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.1;
+      white-space: nowrap;
+      display: inline-block;
+    }
+
+    a.email-link {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 36px 0 60px;
+      text-align: center;
+      color: var(--sub);
+      font-size: 13px
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="publisher">Eastern Publishing 초청</div>
+
+      <h1 class="title">김지원 클래식기타 리사이틀</h1>
+      <h2 class="subtitle">羽化</h2>
+      <p>날개를 펴고 세상으로 날아오르다</p>
+      <div class="hero-cta">
+        <div class="datetime">2025.9.20 sat pm5:00</div>
+        <div class="venue">예술공간 수애뇨</div>
+        <a class="ticket" href="#">전석 초대</a>
+      </div>
+  </header>
+
+  <main>
+    <!-- ARTIST: Guitar -->
+    <section id="artists">
+      <div class="container">
+        <h3 class="section-title">Artists</h3>
+
+        <div class="grid two">
+          <!-- Guitar · 김지원 -->
+          <div>
+            <h4 style="margin:0 0 10px">Guitar · 김지원</h4>
+            <div class="card">
+              <p>기타리스트 <strong>김지원</strong>은 1998년 인천에서 태어나, 2012년 만 14세에 리여석의 지도 아래 클래식기타를 시작하였다. 같은 해 한국기타협회 주최
+                국제기타콩쿠르
+                청소년부 1위를 수상하며 주목을 받았고, 이후 서울바로크합주단 전국 음악 콩쿠르, 수원대학교 전국 음악 콩쿠르, 서경대학교 전국 음악 콩쿠르 등 국내 주요 콩쿠르에서 모두 1위를 차지하며
+                두각을 나타냈다.</p>
+              <p>2017년에는 빈 국립음악대학교(Universität für Musik und darstellende Kunst Wien) 클래식기타 연주자 과정(Diplom)에 만점으로 수석
+                입학하며, 세계적인 기타 거장 <strong>알바로 피에리(Álvaro Pierri)</strong> 교수의 제자가 되었다. 이후 피에리 교수의 사사 아래 학문과 예술적 역량을 쌓아
+                2025년 최고 점수로 졸업, 학사 및 석사 통합 학위를 취득하였다.</p>
+              <p>그는 주오스트리아 한국문화원, 재오스트리아 한인연합회 등 다양한 무대에 연주자로 초청되어 활동해 왔으며, 오는 가을부터는 동 대학 최고연주자과정(Postgraduate
+                Certificate)에 진학하여 음악적 깊이를 한층 더할 예정이다.</p>
+            </div>
+          </div>
+
+          <div>
+            <figure class="card">
+              <img src="jiwon2.jpeg" alt="기타리스트 김지원 사진" />
+              <figcaption class="byline">[김지원]</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div style="height:50px"></div> <!-- 두 그리드 사이 여백 소량 -->
+
+        <div class="grid two">
+          <!-- Violin · 오하연 -->
+          <div>
+            <h4 style="margin:0 0 10px">Violin · 오하연</h4>
+            <div class="card">
+              <ul class="clean">
+                <li>서울예술고등학교 졸업(사사: 안지윤)</li>
+                <li>빈 국립음대 Diploma 최고점 졸업(사사: Jan Pospichal)</li>
+                <li>빈 국립음대 최고연주자과정(Postgraduate Certificate) 취득(사사: Ioana Cristina Goicea)</li>
+                <li>빈 국립 폭스오퍼(Volksoper Wien) 계약 단원 역임</li>
+                <li>톤퀸스트러 오케스트라(Tonkünstler Orchestra) 계약 단원 역임</li>
+                <li>부르크너 오케스트라 린츠(Bruckner Orchestra Linz) 계약 단원 역임</li>
+                <li>브뤼켄 페스티벌(Brücken Festival, 현대음악 페스티벌) 초청 연주</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <figure class="card">
+              <img src="violin_Ohayun.jpeg" alt="바이올리니스트 오하연 사진" />
+              <figcaption class="byline">[오하연]</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- QUOTES -->
+    <section id="quotes">
+      <div class="container grid two">
+        <div class="card">
+          <blockquote>“깊은 울림과 짙은 감정, 감각적 세련미를 지닌, 다음 세대를 이끌 보석 같은 기타리스트” <span class="byline">— 기타리스트 박규희</span>
+          </blockquote>
+        </div>
+        <div class="card">
+          <blockquote>“김지원은 정교하고 세련된 음악적 감각과 아름다운 예술성을 동시에 갖춘 매우 재능 있는 기타리스트입니다. 지난 6년간 빈 국립음악대학에서 그녀를 제 클래스에 두고 지도해 온
+            것은 제게 더없는 기쁨이었습니다.” <span class="byline">— 빈 국립음대 교수 Álvaro Pierri</span></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROGRAM -->
+    <section id="program">
+      <div class="container">
+        <h3 class="section-title">Program</h3>
+        <div class="card program">
+          <p><strong>John Dowland (1563–1626)</strong><br>
+            <em>Lachrimae Pavan</em><br>
+            <em>Fantasia No. 7</em>
+          </p>
+          <p><strong>Giulio Regondi (1822–1872)</strong><br>
+            <em>Étude No. 8</em>
+          </p>
+          <p><strong>Anton Diabelli (1781–1858)</strong><br>
+            <em>Sonata in A Major, Op. 29</em> (arr. Julian Bream)<br>
+            <span class="mov">
+              I. Allegro moderato<br>
+              II. Andante sostenuto<br>
+              III. Minuetto (Quasi Scherzo)<br>
+              IV. Rondo Allegretto
+            </span>
+          </p>
+          <p class="byline" style="font-style:italic">— Pause —</p>
+          <p><strong>Agustín Barrios Mangoré (1885–1944)</strong><br>
+            <em>Prelude in c minor</em><br>
+            <em>Vals, Op. 8 No. 4</em>
+          </p>
+          <p><strong>Sérgio Assad (b. 1952)</strong><br>
+            <em>Fantasia Carioca</em>
+          </p>
+          <p><strong>Astor Piazzolla (1921–1992)</strong><br>
+            <em>Histoire du Tango</em><br>
+            <span class="mov">
+              I. Bordel 1900<br>
+              II. Café 1930<br>
+              III. Nightclub 1960<br>
+              IV. Concert d’aujourd’hui
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- LOCATION -->
+    <section id="location">
+      <div class="container">
+        <h3 class="section-title">Location</h3>
+        <div class="card">
+
+          <p class="byline" style="margin-top:0">예술공간 수애뇨</p>
+          <p class="byline" style="margin-top:4px">서울시 종로구 평창길 339</p>
+          <p class="byline" style="margin-top:4px">T : 010-7379-2960</p>
+
+          <!-- ✅ 약도 이미지 -->
+          <figure class="map-figure">
+            <img src="map1.png" alt="예술공간 수애뇨 약도: 북악정, 김종영미술관, 가나아트센터 인근 표기" class="map-img" loading="lazy"
+              decoding="async">
+          </figure>
+
+          <div class="btns" style="margin-top:12px">
+            <a class="btn" href="https://map.kakao.com/link/search/수애뇨339" target="_blank" rel="noopener">카카오맵</a>
+            <a class="btn" href="tmap://search?name=수애뇨339" target="_blank" rel="noopener">티맵</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <h3 class="section-title">Contact</h3>
+        <div class="card">
+          <p style="margin:0 0 8px">공연 및 좌석 문의 [문자로 보내주세요]</p>
+          <p style="margin:0">
+            T : 010-5238-4992
+            <a href="sms:01052384992" class="btn">문자보내기</a><br>
+            e-mail : <a href="mailto:unafurtivala@naver.com" class="email-link">unafurtivala@naver.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2025 Eastern Publishing<br>
+      e-mail : <a href="mailto:eastern01publishing@gmail.com" class="email-link">eastern01publishing@gmail.com</a>
+    </div>
+  </footer>
+
+</html>
